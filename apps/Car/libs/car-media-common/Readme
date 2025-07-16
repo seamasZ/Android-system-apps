@@ -3,3 +3,5 @@
 
 
 遇到的难点：由于内容源很多，切换源的时候会拉取很多图片，造成glide线程阻塞。
+
+难点：通过接受广播让应用自己拉起自己，安卓禁止非系统应用自己把自己从无进程状态拉到前台。使用androidx.work.WorkManager工具需要把项目的compileSdkVersion和gradle都进行大版本升级
